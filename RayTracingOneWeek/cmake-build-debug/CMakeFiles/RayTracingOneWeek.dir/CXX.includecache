@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+B:/ClionProjects/RayTracingOneWeek/color.h
+vec3.h
+B:/ClionProjects/RayTracingOneWeek/vec3.h
+iostream
+-
+
+B:/ClionProjects/RayTracingOneWeek/main.cpp
+iostream
+-
+vec3.h
+B:/ClionProjects/RayTracingOneWeek/vec3.h
+ray.h
+B:/ClionProjects/RayTracingOneWeek/ray.h
+color.h
+B:/ClionProjects/RayTracingOneWeek/color.h
+
+B:/ClionProjects/RayTracingOneWeek/ray.h
+vec3.h
+B:/ClionProjects/RayTracingOneWeek/vec3.h
+
+B:/ClionProjects/RayTracingOneWeek/vec3.h
+cmath
+-
+iostream
+-
+

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\RayTracingOneWeek.dir/objects.a
+B:\mingw64\bin\ar.exe cr CMakeFiles\RayTracingOneWeek.dir/objects.a @CMakeFiles\RayTracingOneWeek.dir\objects1.rsp
+B:\mingw64\bin\g++.exe  -static -g -static-libgcc -static-libstdc++ -Wl,--whole-archive CMakeFiles\RayTracingOneWeek.dir/objects.a -Wl,--no-whole-archive -o RayTracingOneWeek.exe -Wl,--out-implib,libRayTracingOneWeek.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\RayTracingOneWeek.dir\linklibs.rsp
