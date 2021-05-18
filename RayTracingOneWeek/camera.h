@@ -12,6 +12,9 @@ public:
         auto viewport_width = aspect_ratio * viewport_height;
         auto focal_length = 1.0;
 
+        // -1.77778 -1 -1
+        // lower_left_corner
+
         origin = point3(0, 0, 0);
         horizontal = vec3(viewport_width, 0.0, 0.0);
         vertical = vec3(0.0, viewport_height, 0.0);
@@ -28,4 +31,5 @@ private:
     vec3 horizontal;
     vec3 vertical;
 };
+
 #endif

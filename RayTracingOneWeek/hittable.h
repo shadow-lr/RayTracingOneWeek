@@ -4,6 +4,7 @@
 
 #include "ray.h"
 
+/*该结构体记录“撞点”处的信息：离光线起点的距离t、撞点的坐标向量p、撞点出的法向量normal。*/
 struct hit_record {
     point3 p;
     vec3 normal;
@@ -19,6 +20,7 @@ struct hit_record {
     }
 };
 
+//hitable这个类表示能够被光线撞上的任何物体。比如，球体
 class hittable {
 public:
     virtual bool hit(const ray& r, double t_min, double t_max, hit_record& rec) const = 0;

@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/camera.h
+rtweekend.h
+B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/rtweekend.h
+
 B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/color.h
 vec3.h
 B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/vec3.h
+rtweekend.h
+B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/rtweekend.h
 iostream
 -
 
@@ -37,6 +43,8 @@ hittable_list.h
 B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/hittable_list.h
 sphere.h
 B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/sphere.h
+camera.h
+B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/camera.h
 iostream
 -
 
