@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "B:/ClionProjects/RayTracingOneWeek/main.cpp" "B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/CMakeFiles/RayTracingOneWeek.dir/main.cpp.obj"
+  "D:/repos/ray-tracing-one-week/RayTracingOneWeek/main.cpp" "D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/CMakeFiles/RayTracingOneWeek.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -8,97 +8,106 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug"/>
+				<Option working_dir="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug"/>
+				<Option working_dir="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RayTracingOneWeek">
-				<Option output="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/RayTracingOneWeek.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug"/>
+				<Option output="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/RayTracingOneWeek.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 RayTracingOneWeek"/>
-					<CompileFile command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 RayTracingOneWeek"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RayTracingOneWeek/fast">
-				<Option output="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/RayTracingOneWeek.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug"/>
+				<Option output="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/RayTracingOneWeek.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="B:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 RayTracingOneWeek/fast"/>
-					<CompileFile command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 RayTracingOneWeek/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="B:/ClionProjects/RayTracingOneWeek/cmake-build-debug"/>
+				<Option working_dir="D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="B:/mingw64/bin/mingw32-make.exe -f &quot;B:/ClionProjects/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/repos/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/color.h">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/camera.h">
 			<Option target="RayTracingOneWeek"/>
 		</Unit>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/hittable.h">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/color.h">
 			<Option target="RayTracingOneWeek"/>
 		</Unit>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/main.cpp">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/hittable.h">
 			<Option target="RayTracingOneWeek"/>
 		</Unit>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/ray.h">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/hittable_list.h">
 			<Option target="RayTracingOneWeek"/>
 		</Unit>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/sphere.h">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/main.cpp">
 			<Option target="RayTracingOneWeek"/>
 		</Unit>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/vec3.h">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/ray.h">
 			<Option target="RayTracingOneWeek"/>
 		</Unit>
-		<Unit filename="B:/ClionProjects/RayTracingOneWeek/CMakeLists.txt">
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/rtweekend.h">
+			<Option target="RayTracingOneWeek"/>
+		</Unit>
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/sphere.h">
+			<Option target="RayTracingOneWeek"/>
+		</Unit>
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/vec3.h">
+			<Option target="RayTracingOneWeek"/>
+		</Unit>
+		<Unit filename="D:/repos/ray-tracing-one-week/RayTracingOneWeek/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
