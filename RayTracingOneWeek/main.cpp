@@ -58,8 +58,8 @@ int main() {
     for (int j = image_height - 1; j >= 0; --j) {
         std::cerr << "\rScanlines remaining: " << j << ' ' << std::flush;
         for (int i = 0; i < image_width; ++i) {
-            color pixel_color(0,0,0);
-            for (int s = 0 ; s < samples_per_pixel; ++s){
+            color pixel_color(0, 0, 0);
+            for (int s = 0; s < samples_per_pixel; ++s) {
                 double u = (i + random_double()) / (image_width - 1.0);
                 double v = (j + random_double()) / (image_height - 1.0);
                 ray r = cam.get_ray(u, v);

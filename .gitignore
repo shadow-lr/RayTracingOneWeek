@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Directories
+/RayTracingOneWeek/cmake-build-debug
+/.idea
