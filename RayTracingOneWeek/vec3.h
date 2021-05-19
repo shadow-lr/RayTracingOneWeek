@@ -109,10 +109,12 @@ inline vec3 cross(const vec3 &u, const vec3 &v) {
                 u.e[0] * v.e[1] - u.e[1] * v.e[0]);
 }
 
+// 单位向量
 inline vec3 unit_vector(vec3 v) {
     return v / v.length();
 }
 
+// 知道取到符号条件的点为止
 vec3 random_in_unit_sphere() {
     while (true) {
         vec3 p = vec3::random(-1, 1);
@@ -121,6 +123,10 @@ vec3 random_in_unit_sphere() {
             continue;
         return p;
     }
+}
+
+vec3 random_unit_vector(){
+    return unit_vector(random_in_unit_sphere());
 }
 
 #endif
