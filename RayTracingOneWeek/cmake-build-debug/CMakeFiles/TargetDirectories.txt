@@ -1,3 +1,0 @@
-B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/CMakeFiles/RayTracingOneWeek.dir
-B:/ClionProjects/ray-tracing-one-week/RayTracingOneWeek/cmake-build-debug/CMakeFiles/edit_cache.dir
