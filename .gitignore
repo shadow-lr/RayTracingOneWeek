@@ -32,5 +32,10 @@
 *.app
 
 # Directories
-/RayTracingOneWeek/cmake-build-debug
+/RayTracingOneWeek/cmake-build-debug/CMakeFiles
+/RayTracingOneWeek/cmake-build-debug/Testing
+/RayTracingOneWeek/cmake-build-debug/Makefile
+/RayTracingOneWeek/cmake-build-debug/cmake_install.cmake
+/RayTracingOneWeek/cmake-build-debug/CMakeCache.txt
+/RayTracingOneWeek/cmake-build-debug/RayTracingOneWeek.cbp
 /.idea

@@ -1,4 +1,3 @@
-#pragma once
 #ifndef RTWEEKEND_H
 #define RTWEEKEND_H
 
@@ -6,6 +5,7 @@
 #include <limits>
 #include <memory>
 #include <random>
+#include <cstdlib>
 
 // Usings
 
@@ -30,6 +30,11 @@ inline double random_double() {
     return distribution(generator);
 }
 
+// return a random value in the interval between min value and max value
+inline double random_double(double min, double max) {
+    return min + (max - min) * random_double();
+}
+
 inline double clamp(double x, double min, double max) {
     if (x < min) return min;
     if (x > max) return max;
@@ -37,7 +42,6 @@ inline double clamp(double x, double min, double max) {
 }
 
 // Common Headers
-
 #include "ray.h"
 #include "vec3.h"
 

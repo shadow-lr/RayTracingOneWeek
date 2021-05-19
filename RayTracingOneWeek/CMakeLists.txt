@@ -4,7 +4,7 @@ project(RayTracingOneWeek)
 #设置静态编译
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 # 生成独立可执行行文件
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 
