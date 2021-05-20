@@ -9,7 +9,7 @@ class sphere : public hittable {
 public:
     sphere() {}
 
-    sphere(point3 cen, double r) : center(cen), radius(r) {};
+    sphere(point3 cen, double r, shared_ptr<material> m) : center(cen), radius(r), mat_ptr(m) {};
 
     virtual bool hit(
             const ray &r, double t_min, double t_max, hit_record &rec) const override;
@@ -17,6 +17,7 @@ public:
 public:
     point3 center;
     double radius;
+    shared_ptr<material> mat_ptr;
 };
 
 // 另一种写法
@@ -75,7 +76,9 @@ bool sphere::hit(const ray &r, double t_min, double t_max, hit_record &rec) cons
     // 中心点到原上点的向量 再 除以 半径（向量的长度）
     rec.normal = (rec.p - center) / radius;
 
-    // 1表面确定
+    rec.mat_ptr = mat_ptr;
+
+    // 表面法线方向一定与入射相反的
     vec3 outward_normal = (rec.p - center) / radius;
     rec.set_face_normal(r, outward_normal);
 

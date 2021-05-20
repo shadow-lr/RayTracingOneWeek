@@ -59,6 +59,13 @@ public:
         return vec3(random_double(min, max), random_double(min, max), random_double(min, max));
     }
 
+    // 此时向量的各分量是否都接近0
+    bool near_zero() const {
+        // Return true if the vector is close to zero in all dimensions
+        const auto s = 1e-8;
+        return (fabs(e[0]) < s) && (fabs(e[1]) < s) && (fabs(e[2]) < s);
+    }
+
 public:
     double e[3];
 };
@@ -115,7 +122,7 @@ inline vec3 unit_vector(vec3 v) {
     return v / v.length();
 }
 
-// 知道取到符号条件的点为止
+// 知道取到符合条件的点为止
 vec3 random_in_unit_sphere() {
     while (true) {
         vec3 p = vec3::random(-1, 1);
@@ -127,11 +134,12 @@ vec3 random_in_unit_sphere() {
 }
 
 // 随机后并且归一化
-vec3 random_unit_vector(){
+vec3 random_unit_vector() {
     return unit_vector(random_in_unit_sphere());
 }
 
-vec3 random_in_hemisphere(const vec3& normal){
+// 根据法线随机在同侧半球面的单位向量
+vec3 random_in_hemisphere(const vec3 &normal) {
     vec3 in_unit_sphere = random_in_unit_sphere();
 
     // In the same hemisphere as the normal
@@ -139,6 +147,11 @@ vec3 random_in_hemisphere(const vec3& normal){
         return in_unit_sphere;
     else
         return -in_unit_sphere;
+}
+
+// 反射
+vec3 reflect(const vec3 &v, const vec3 &n) {
+    return v - 2 * dot(v, n) * n;
 }
 
 #endif
