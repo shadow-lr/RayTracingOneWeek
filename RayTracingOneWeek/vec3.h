@@ -65,6 +65,7 @@ public:
 
 // Type aliases for vec3
 using point3 = vec3;   // 3D point
+// 将x, y, z 映射到 r, g, b
 using color = vec3;    // RGB color
 
 // vec3 Utility Functions
@@ -125,8 +126,19 @@ vec3 random_in_unit_sphere() {
     }
 }
 
+// 随机后并且归一化
 vec3 random_unit_vector(){
     return unit_vector(random_in_unit_sphere());
+}
+
+vec3 random_in_hemisphere(const vec3& normal){
+    vec3 in_unit_sphere = random_in_unit_sphere();
+
+    // In the same hemisphere as the normal
+    if (dot(in_unit_sphere, normal) > 0.0)
+        return in_unit_sphere;
+    else
+        return -in_unit_sphere;
 }
 
 #endif

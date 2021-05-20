@@ -23,12 +23,17 @@ color ray_color(const ray &r, const hittable &world, int depth) {
 
 //        point3 target = rec.p + rec.normal + random_in_unit_sphere();
         // 更改后阴影不那么明显
-        point3 target = rec.p + rec.normal + random_unit_vector();
+        // 沿表面法线在单位球偏移中生成随机点
+//        point3 target = rec.p + rec.normal + random_unit_vector();
+
+        // 半球散射的效果
+        point3 target = rec.p + random_in_hemisphere(rec.normal);
         return 0.5 * ray_color(ray(rec.p, target - rec.p), world, depth - 1);
     }
 
     // 背景色
     vec3 unit_direction = unit_vector(r.direction());
+    // x y z 映射 r g b
     double t = 0.5 * (unit_direction.y() + 1.0);
     return (1.0 - t) * color(1.0, 1.0, 1.0) + t * color(0.5, 0.7, 1.0);
 }
@@ -65,13 +70,6 @@ int main() {
                 pixel_color += ray_color(r, world, max_depth);
             }
             write_color(std::cout, pixel_color, samples_per_pixel);
-
-//            double u = (i) / (image_width - 1.0);
-//            double v = (j) / (image_height - 1.0);
-//            ray r = cam.get_ray(u, v);
-//            color pixel_color = ray_color(r, world, max_depth);
-//
-//            write_color(std::cout, pixel_color, 1);
         }
     }
 
