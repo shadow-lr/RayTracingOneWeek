@@ -51,6 +51,7 @@ return false;
  *
  * */
 bool sphere::hit(const ray &r, double t_min, double t_max, hit_record &rec) const {
+    // 求交
     vec3 oc = r.origin() - center;
     auto a = r.direction().length_squared();
     auto half_b = dot(oc, r.direction());
@@ -71,6 +72,7 @@ bool sphere::hit(const ray &r, double t_min, double t_max, hit_record &rec) cons
             return false;
     }
 
+    // 更新hit_record的rec信息
     rec.t = root;
     rec.p = r.at(rec.t);
     // 中心点到原上点的向量 再 除以 半径（向量的长度）
