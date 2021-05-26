@@ -63,16 +63,24 @@ void scan_calculate_color(int height, int width) {
         pixel_color += ray_color(r, world, max_depth);
     }
 //    write_color(std::cout, pixel_color, samples_per_pixel);
-    write_color_table(pixel_color, samples_per_pixel, color_table,j ,i);
+    write_color_table(pixel_color, samples_per_pixel, color_table, j, i);
 }
 
 int main() {
-    shared_ptr<lambertian> material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
+//    Chapter Listing 55:
 //    shared_ptr<lambertian> material_center = make_shared<lambertian>(color(0.7, 0.3, 0.3));
 //    shared_ptr<metal> material_left = make_shared<metal>(color(0.8, 0.8, 0.8), 0.3);
-    shared_ptr<dielectric> material_center = make_shared<dielectric>(1.5);
+
+//    Chapter Listing 59:
+    shared_ptr<lambertian> material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
+    shared_ptr<lambertian> material_center = make_shared<lambertian>(color(0.1, 0.2, 0.5));
     shared_ptr<dielectric> material_left = make_shared<dielectric>(1.5);
-    shared_ptr<metal> material_right = make_shared<metal>(color(0.8, 0.6, 0.2), 1.0);
+    shared_ptr<metal> material_right = make_shared<metal>(color(0.8, 0.6, 0.2), 0.0);
+
+//    shared_ptr<lambertian> material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
+//    shared_ptr<dielectric> material_center = make_shared<dielectric>(1.5);
+//    shared_ptr<dielectric> material_left = make_shared<dielectric>(1.5);
+//    shared_ptr<metal> material_right = make_shared<metal>(color(0.8, 0.6, 0.2), 1.0);
 
 //    world.add(make_shared<sphere>(point3(0, 0, -1), 0.5));
 //    world.add(make_shared<sphere>(point3(0, -100.5, -1), 100));
@@ -80,6 +88,7 @@ int main() {
     world.add(make_shared<sphere>(point3(0.0, -100.5, -1.0), 100.0, material_ground));
     world.add(make_shared<sphere>(point3(0.0, 0.0, -1.0), 0.5, material_center));
     world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0), 0.5, material_left));
+    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0), -0.4, material_left));
     world.add(make_shared<sphere>(point3(1.0, 0.0, -1.0), 0.5, material_right));
 
     // Render
