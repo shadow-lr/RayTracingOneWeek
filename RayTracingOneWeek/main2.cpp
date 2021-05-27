@@ -23,8 +23,21 @@ const int samples_per_pixel = 60;
 // World
 hittable_list world;
 
-// Camera
-camera cam(90.0, aspect_ratio);
+// Camera old before chapter 11
+//camera cam(90.0, aspect_ratio);
+
+// Camera new after chapter 11
+//camera cam(point3(-2, 2, 1), point3(0, 0, -1), vec3(0, 1, 0), 90, aspect_ratio);
+
+//camera cam(point3(-2,2,1), point3(0,0,-1), vec3(0,1,0), 20, aspect_ratio);
+
+// Camera new after chapter 12
+point3 lookfrom(3,3,2);
+point3 lookat(0,0,-1);
+vec3 vup(0,1,0);
+auto dist_to_focus = (lookfrom-lookat).length();
+auto aperture = 2.0;
+camera cam(lookfrom, lookat, vup, 20, aspect_ratio, aperture, dist_to_focus);
 
 std::vector<std::vector<color>> color_table(image_height + 1, std::vector<color>(image_width + 1));
 
@@ -70,11 +83,16 @@ int main() {
 
     auto R = cos(pi / 4);
 
-    auto material_left = make_shared<lambertian>(color(0, 0, 1));
-    auto material_right = make_shared<lambertian>(color(1, 0, 0));
+    auto material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
+    auto material_center = make_shared<lambertian>(color(0.1, 0.2, 0.5));
+    auto material_left = make_shared<dielectric>(1.5);
+    auto material_right = make_shared<metal>(color(0.8, 0.6, 0.2), 0.0);
 
-    world.add(make_shared<sphere>(point3(-R, 0, -1), R, material_left));
-    world.add(make_shared<sphere>(point3(R, 0, -1), R, material_right));
+    world.add(make_shared<sphere>(point3(0.0, -100.5, -1.0), 100.0, material_ground));
+    world.add(make_shared<sphere>(point3(0.0, 0.0, -1.0), 0.5, material_center));
+    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0), 0.5, material_left));
+    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0), -0.45, material_left));
+    world.add(make_shared<sphere>(point3(1.0, 0.0, -1.0), 0.5, material_right));
 
     // Render
     std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
